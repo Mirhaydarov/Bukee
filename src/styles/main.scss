@@ -85,7 +85,7 @@ body {
         height: 639px;
         border-radius: 5px;
         flex-basis: 500px;
-        // background-size: cover;
+
     }
 }
 
@@ -148,4 +148,9 @@ body {
 }
 
 
-
+.block-author {
+    display:flex;
+    &-image {
+        background: url(../img/Слой_1.jpg) no-repeat;
+    }
+}
