@@ -6,7 +6,8 @@
 @import "base/general";
 @import "../blocks/modules";
 
-
+$light-color: #fff;
+$accent-color: #65e496;
 
 h1, h2, h3, h4, p {
     padding: 0;
@@ -17,36 +18,134 @@ body {
     font-family: 'Roboto Slab', serif;
 
 }
+.wrap {
+    max-width: 1170px;
+    margin: 0 auto;
+}
 
 .page-main {
     background-image: url(../img/bg-main.png);
     background-repeat: no-repeat;
     background-size: cover;
+    color: $light-color;
+    padding-bottom: 275px;
+   
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 200px;
+   
     &__logo {
         background-image: url(../img/svg/logo.svg);
         display: block;
         width: 137px;
         height: 28px;
-        margin-left: 30px;
     }
     &-list {
         display: flex;
         justify-content: flex-end;
         list-style-type: none;
+        font-family: 'Open Sans', sans-serif;
+        
         &__item {
-            margin-left: -10px;
-            margin-right: 32px;
+            margin-left: 22px;
             font-size: 18px;
-            color: #fff;
             letter-spacing: 0.8px;
             font-weight: 400;
-            font-family: 'Open Sans', sans-serif;
+            padding-bottom: 5px;
+            transition: 0.3s;
+            border-bottom: 3px solid transparent;
+            &:hover {
+                border-bottom: 3px solid $accent-color;
+            }
+           
+        }
+        &__item.active {
+            border-bottom: 3px solid $accent-color;
+        }
+        &__link {
+            text-decoration: none;
+            color: $light-color;
         }
     }
 }
+
+.block-book {
+    display: flex;
+    &-demo {
+        display: block;
+        background: url(../img/svg/book.svg) no-repeat;
+        width: 445px;
+        height: 639px;
+        border-radius: 5px;
+        flex-basis: 500px;
+        // background-size: cover;
+    }
+}
+
+.block-text {
+    flex-basis: calc(96% - 500px);
+    &__name {
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 2.0px;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 5.0px;
+        margin-top: 35px;
+        margin-bottom: 45px;
+        span {
+            color: $accent-color;
+            font-size: 18px;
+            font-weight: 400;
+            display: block;
+            letter-spacing: 2.0px;
+            text-transform: none;
+            margin-top: 20px;
+
+        }
+    }
+    &__description {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 1.60px;
+        margin-bottom: 25px;
+    }
+    &__btn {
+        display: block;
+        background-color: $accent-color;
+        color: $light-color;
+        text-decoration: none;
+        text-align: center;
+        max-width: 250px;
+        border-radius: 3px;
+        box-shadow: 0 2px 0 rgba(101, 228, 125, 0.5);
+        background-image: linear-gradient(to left, rgba(101, 228, 206, 0.7) 0%, rgba(101, 228, 161, 0.7) 100%);
+        margin-top: 50px;
+        padding: 18px 14px;
+        margin-bottom: 25px;
+        font-size: 18px;
+        letter-spacing: 1.72px;
+    }
+    small {
+        font-style: italic;
+        letter-spacing: 0.5px
+    }
+
+}
+
+
 
