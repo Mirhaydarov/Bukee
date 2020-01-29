@@ -65,8 +65,8 @@
             </div>
         </div>
     </div>
+    <section>
     <div class="page">
-        <section>
             <div class="wrap">
                 <div class="block-author">
                     <div class="block-text">
@@ -97,22 +97,22 @@
                    <p><span> 15,000</span>Happy readers</p>       
                 </div>
             </div>
-        </section>
-    </div>
-    <div class="page page_gray">
-        <section>
+        </div>
+    </section>
+    <section>
+        <div class="page page_gray">
             <div class="wrap">
                 <h2 class="page__title">Book Contents</h2>
                 <p class="page__subtitle">Let’s see what we have covered in the book</p>
                 <div class="block-about">
                     <div class="block-about-text">
                         <h3>About the book</h3>
-                        <p>
+                        <p class="block-about-text__desc">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillu m dolore eu fugiat nulla pariatur.
                         </p>
-                        <div class="block-about-container">
-                            <p class="block-about-container__social">Featured in:</p>
-                            <ul>
+                        <div class="block-about-social">
+                            <p class="block-about-social__title">Featured in:</p>
+                            <ul class="block-about-social__list">
                                 <li><a href="#"></a><i class="fab fa-stack-overflow"></i></li>
                                 <li><a href="#"></a><i class="fab fa-amazon"></i></li>
                                 <li><a href="#"></a><i class="fab fa-sass"></i></li>
@@ -136,11 +136,39 @@
                             <button class="block-about-table__btn">More</button>
                     </div>
                 </div>
+            </div>      
+        </div>
+    </section>
+    <section>
+        <div class="page page_size">
+            <div class="wrap">
+                <h2 class="page__title">Other Books</h2>
+                <p class="page__subtitle">Some books you might be interested in</p>
+                <div class="block-more">
+                    <div class="block-more-product">
+                        <div class="block-more-product__img"></div>
+                        <h3>Inception</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <a href="#">Read More</a>
+                    </div>
+                    <div class="block-more-product">
+                        <div class="block-more-product__img"></div>
+                        <h3>Fight Club</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <a href="#">Read More</a>
+                    </div>
+                    <div class="block-more-product">
+                        <div class="block-more-product__img"></div>
+                        <h3>Daredevils</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <a href="#">Read More</a>
+                    </div>
             </div>
-        </section>
-    </div>
-    
-    
+                <a class="page__btn"href="#">Browse all books</a>
+            </div>
+        </div>
+    </section>
+
         @@include("../blocks/modules/header/header.html")
         @@include("../blocks/modules/footer/footer.html")
         <script src="js/main.js"></script>
