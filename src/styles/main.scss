@@ -17,205 +17,241 @@ $btn-gradient: linear-gradient(to left, rgba(101, 228, 206, 0.7) 0%, rgba(101, 2
 $btn-shadow: rgba(101, 228, 125, 0.5);
 
 h1, h2, h3, h4, p {
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 h1 {
-    text-transform: uppercase;
-    margin-top: 35px;
+	text-transform: uppercase;
+	margin-top: 35px;
 }
 h3 {
-    color: $subtitle-color;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 1.2px;
+	color: $subtitle-color;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 1.2px;
 }
 
 body {
-    font-family: 'Roboto Slab', serif;
-    font-size: 15px;
+	font-family: 'Roboto Slab', serif;
+	font-size: 15px;
+
 }
 .wrap {
-    max-width: 1170px;
-    margin: 0 auto;
+	max-width: 1170px;
+	margin: 0 auto;
 }
 
 .page-main {
-    background-image: url(../img/bg-main.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: $light-color;
-    padding-bottom: 160px;
+	background-image: url(../img/bg-main.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: $light-color;
+	padding-bottom: 160px;
    
 }
 
 .page {
-    margin-top: 175px;
-    margin-bottom: 165px;
-    &_gray {
-        background-color: $bg-light-color;
-        padding-bottom: 255px;
-        padding-top: 135px;
-    }
-    &_size {
-        margin: 0;
-    }
-    &__title {
-        font-size: 48px;
-        font-weight: 700;
-        letter-spacing: 1.92px;
-        color: $subtitle-color;
-        text-align: center;
-    }
-    &__subtitle {
-        color: $accent-color;
-        font-size: 18px;
-        font-weight: 400;
-        letter-spacing: 0.9px;
-        text-align: center;
-        line-height: 44px;
-    }
-    &__btn {
-        display: block;
-        margin: 0 auto;
-        background-color: $accent-color;
-        background-image: $btn-gradient;
-        box-shadow: 0 2px 0 $btn-shadow;
-        border-radius: 3px;
-        font-size: 18px;
-        letter-spacing: 0.72px;
-        color: #fff;
-        text-decoration: none;
-        text-align: center;
-        max-width: 220px;
-        margin-top: 87px;
-        padding: 15px 0px;
-        
-    }
+	margin-top: 175px;
+	margin-bottom: 165px;
+	&_gray {
+		background-color: $bg-light-color;
+		padding-bottom: 255px;
+		padding-top: 135px;
+	}
+	&_size {
+		margin: 0;
+	}
+	&__title {
+		font-size: 48px;
+		font-weight: 700;
+		letter-spacing: 1.92px;
+		color: $subtitle-color;
+		text-align: center;
+	}
+	&__subtitle {
+		color: $accent-color;
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: 0.9px;
+		text-align: center;
+		line-height: 44px;
+	}
+	&__btn {
+		display: block;
+		margin: 0 auto;
+		background-color: $accent-color;
+		background-image: $btn-gradient;
+		box-shadow: 0 2px 0 $btn-shadow;
+		border-radius: 3px;
+		font-size: 18px;
+		letter-spacing: 0.72px;
+		color: #fff;
+		text-decoration: none;
+		text-align: center;
+		max-width: 220px;
+		margin-top: 87px;
+		padding: 15px 0px;
+		
+	}
 }
 
 /* block one */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1170px;
-    margin: 0 auto;
-    padding-top: 60px;
-    padding-bottom: 180px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding-top: 60px;
+	padding-bottom: 180px;
    
-    &__logo {
-        background-image: url(../img/svg/logo.svg);
-        display: block;
-        width: 137px;
-        height: 28px;
-    }
-    &-list {
-        display: flex;
-        justify-content: flex-end;
-        list-style-type: none;
-        font-family: 'Open Sans', sans-serif;
-        
-        &__item {
-            margin-left: 20px;
-            font-size: 16px;
-            letter-spacing: 0.8px;
-            font-weight: 400;
-            padding-bottom: 5px;
-            transition: 0.3s;
-            border-bottom: 3px solid transparent;
-            &:hover {
-                border-bottom: 3px solid $accent-color;
-            }
-           
-        }
-        &__item.active {
-            border-bottom: 3px solid $accent-color;
-        }
-        &__link {
-            text-decoration: none;
-            color: $light-color;
-        }
-    }
+	&__logo {
+		background-image: url(../img/svg/logo.svg);
+		display: block;
+		width: 137px;
+		height: 28px;
+	}
+	&-list {
+		display: flex;
+		justify-content: flex-end;
+		list-style-type: none;
+		font-family: 'Open Sans', sans-serif;
+		
+		&__item {
+			margin-left: 20px;
+			font-size: 16px;
+			letter-spacing: 0.8px;
+			font-weight: 400;
+			padding-bottom: 5px;
+			transition: 0.3s;
+			border-bottom: 3px solid transparent;
+			&:hover {
+				border-bottom: 3px solid $accent-color;
+			}
+		   
+		}
+		&__item.active {
+			border-bottom: 3px solid $accent-color;
+		}
+		&__link {
+			text-decoration: none;
+			color: $light-color;
+		}
+	}
 }
 
 .block-book {
-    display: flex;
-    &-demo {
-        display: block;
-        background: url(../img/svg/book.svg) no-repeat;
-        width: 445px;
-        height: 639px;
-        border-radius: 5px;
-        flex-basis: 500px;
+	display: flex;
+	&-demo {
+		background: url(../img/svg/book.svg) no-repeat;
+		width: 445px;
+		height: 639px;
+		border-radius: 5px;
+		flex-basis: 500px;
+		position: relative;
+		&__title {
+			font-size: 36px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 1.44px;
+			position: absolute;
+			top: 108px;
+			left: 128px;
+			span {
+				display: block;
+				text-transform: none;
+				color: $accent-color;
+				font-family: 'Open Sans' ,sans-serif;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 24px;
+				letter-spacing: 0.7px;
 
-    }
+			}
+			
+		}
+		&__author {
+			color: $accent-color;
+			font-family: 'Open Sans' ,sans-serif;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 24px;
+			letter-spacing: 0.7px;
+			margin-bottom: 54px;
+			margin-right: 182px;
+			position: absolute;
+			bottom: 0;
+			left: 85px;
+
+		}
+
+	}
 }
 
 .block-text {
-    flex-basis: calc(92% - 500px);
-    &__name {
-        font-size: 18px;
-        font-weight: 400;
-        letter-spacing: 0.72px;
-        font-family: 'Open Sans', sans-serif;
+	flex-basis: calc(92% - 500px);
+	&__name {
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: 0.72px;
+		font-family: 'Open Sans', sans-serif;
 
-    }
-    &__title {
-        font-size: 48px;
-        font-weight: 700;
-        letter-spacing: 1.92px;
-        line-height: 44px;
-        span {
-            color: $accent-color;
-            font-size: 18px;
-            font-weight: 400;
-            display: block;
-            letter-spacing: 0.9px;;
-            text-transform: none;
-            margin-bottom: 25px;
-            line-height: 50px;
+	}
+	&__title {
+		font-size: 48px;
+		font-weight: 700;
+		letter-spacing: 1.92px;
+		line-height: 44px;
+		span {
+			color: $accent-color;
+			font-size: 18px;
+			font-weight: 400;
+			display: block;
+			letter-spacing: 0.9px;;
+			text-transform: none;
+			margin-bottom: 25px;
+			line-height: 50px;
 
-        }
-    }
-    &__description {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0.75px;
-        margin-bottom: 24px;
-    }
-    &__btn {
-        display: block;
-        background-color: $accent-color;
-        color: $light-color;
-        text-decoration: none;
-        text-align: center;
-        max-width: 239px;
-        border-radius: 3px;
-        box-shadow: 0 2px 0 $btn-shadow;
-        background-image: $btn-gradient;
-        margin-top: 50px;
-        margin-bottom: 15px;
-        padding: 15px 6px;
-        font-size: 18px;
-        letter-spacing: 0.72px;
+		}
+	}
+	&__description {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		line-height: 24px;
+		letter-spacing: 0.75px;
+		margin-bottom: 24px;
+	}
+	&__btn {
+		display: block;
+		background-color: $accent-color;
+		color: $light-color;
+		text-decoration: none;
+		text-align: center;
+		max-width: 239px;
+		border-radius: 3px;
+		box-shadow: 0 2px 0 $btn-shadow;
+		background-image: $btn-gradient;
+		margin-top: 50px;
+		margin-bottom: 15px;
+		padding: 15px 6px;
+		font-size: 18px;
+		letter-spacing: 0.72px;
 
-    }
-    small {
-        font-style: italic;
-        letter-spacing: 0.6px
-    }
+	}
+	small {
+		font-style: italic;
+		letter-spacing: 0.6px
+	}
 
 }
 
 /* block two */
 .block-author {
-    display:flex;
-    justify-content: space-between;
-    margin-bottom: 167px;
+	display:flex;
+	justify-content: space-between;
+	margin-bottom: 167px;
 
 }
 
@@ -223,202 +259,325 @@ body {
 
 
 
-// don't know
+// maybe need fix
 
 .block-author .block-text {
-    &__name {
-        color: $text-color;
-    }
-    &__title {
-        text-transform: none;
-        margin-top: 25px;
-    }
-    &__description {
-        color: $text-color;
+	&__name {
+		color: $text-color;
+	}
+	&__title {
+		text-transform: none;
+		margin-top: 25px;
+	}
+	&__description {
+		color: $text-color;
 
-    }
-    &__btn {
-        padding: 15px 0px;
-    }
+	}
+	&__btn {
+		padding: 15px 0px;
+	}
 }
 
 
 
 
-// ok
+
 .block-avatar {
-    position: relative;
-    &__svg {
-        position: absolute;
-        z-index: -1;
-        right: 0;
-        
-    }
-    &__img {
-        margin-right: 45px;
-        margin-top: 45px;
-    
-    }
+	position: relative;
+	&__svg {
+		position: absolute;
+		z-index: -1;
+		right: 0;
+		
+	}
+	&__img {
+		margin-right: 45px;
+		margin-top: 45px;
+	
+	}
 }
 
 .block-counter {
-    display: flex;
-    justify-content: space-around;
-    p {
-        text-align: center;
-        color: $text-color;
-        font-size: 18px;
-        font-weight: 400;
-        letter-spacing: 0.72px;
-        span {
-            display: block;
-            color: $accent-color;
-            font-size: 80px;
-            font-weight: 100;
-            letter-spacing: 3.2px;
-            margin-bottom: 12px;
-        }
+	display: flex;
+	justify-content: space-around;
+	p {
+		text-align: center;
+		color: $text-color;
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: 0.72px;
+		span {
+			display: block;
+			color: $accent-color;
+			font-size: 80px;
+			font-weight: 100;
+			letter-spacing: 3.2px;
+			margin-bottom: 12px;
+		}
 
-    }
-    
+	}
+	
 }
 
 
-
-
-
-
 /* block three */
-
-
 .block-about {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 70px;
-    
-    &-text {
-        flex-basis: 40%;
-        h3 {
-            margin-bottom: 20px;
-        }
-        &__desc {
-            font-family: 'Open Sans', sans-serif;
-            color: $text-color;
-            font-weight: 400;
-            line-height: 27px;
-            letter-spacing: 0.75px;
-            line-height: 24px;
-        }
-    }
-    &-social {
-        display: flex;
-        margin-top: 30px;
-        &__title {
-            font-family: 'Roboto Slab', serif;
-            color: $subtitle-color;
-            font-size: 18px;
-            font-weight: 700;
-            letter-spacing: 0.9px;
-            margin-right: 10px;
-        }
-        &__list {
-            list-style-type: none;
-            &>li {
-                display: inline-block;
-                color: $accent-color;
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 24px;
-                letter-spacing: 0.9px;
-                margin-left: 12px;
-            }
-            
-        }
-    }
-    &-table {
-        flex-basis: 49%;
-        &__list {
-            margin: 25px 0 0 0;
-            padding: 0;
-            counter-reset: list;
-            column-count: 2;
-            line-height: 24px;
-            &>li {
-                position: relative;
-                padding-left: 36px;
-                counter-increment: list;
-                list-style-type: none;
-                margin-bottom: 8px;
-                letter-spacing: 0.75px;
-                color: $text-color;
-                font-family: 'Open Sans', sans-serif;
-                &::before {
-                    content: counter(list)". ";
-                }
-                &::after {
-                    content: "+";
-                    font-size: 15px;
-                    padding: 0px 7px;
-                    position: absolute;
-                    left: 0;
-                    top: 1px;
-                    color: $light-color;
-                    background-color: #5189a0;
-                    background-image: $btn-gradient;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+	
+	&-text {
+		flex-basis: 40%;
+		h3 {
+			margin-bottom: 20px;
+		}
+		&__desc {
+			font-family: 'Open Sans', sans-serif;
+			color: $text-color;
+			font-weight: 400;
+			line-height: 27px;
+			letter-spacing: 0.75px;
+			line-height: 24px;
+		}
+	}
+	&-social {
+		display: flex;
+		margin-top: 30px;
+		&__title {
+			font-family: 'Roboto Slab', serif;
+			color: $subtitle-color;
+			font-size: 18px;
+			font-weight: 700;
+			letter-spacing: 0.9px;
+			margin-right: 10px;
+		}
+		&__list {
+			list-style-type: none;
+			&>li {
+				display: inline-block;
+				color: $accent-color;
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 24px;
+				letter-spacing: 0.9px;
+				margin-left: 12px;
+			}
+			
+		}
+	}
+	&-table {
+		flex-basis: 49%;
+		&__list {
+			margin: 25px 0 0 0;
+			padding: 0;
+			counter-reset: list;
+			column-count: 2;
+			line-height: 24px;
+			&>li {
+				position: relative;
+				padding-left: 36px;
+				counter-increment: list;
+				list-style-type: none;
+				margin-bottom: 8px;
+				letter-spacing: 0.75px;
+				color: $text-color;
+				font-family: 'Open Sans', sans-serif;
+				&::before {
+					content: counter(list)". ";
+				}
+				&::after {
+					content: "+";
+					font-size: 15px;
+					padding: 0px 7px;
+					position: absolute;
+					left: 0;
+					top: 1px;
+					color: $light-color;
+					background-color: #5189a0;
+					background-image: $btn-gradient;
 
-                }
-            }
-        }
-        &__btn {
-            background-color: #65e496;
-            color: #fff;
-            border: none;
-            border-radius: 3px;
-            box-shadow: 0 2px 0 $btn-shadow;
-            background-image: $btn-gradient;
-            margin-top: 30px;
-            padding: 14px 44px;
-            font-size: 18px;
-            letter-spacing: 0.72px;
-            outline: none;
-        }
-    }
+				}
+			}
+		}
+		&__btn {
+			background-color: #65e496;
+			color: #fff;
+			border: none;
+			border-radius: 3px;
+			box-shadow: 0 2px 0 $btn-shadow;
+			background-image: $btn-gradient;
+			margin-top: 30px;
+			padding: 14px 44px;
+			font-size: 18px;
+			letter-spacing: 0.72px;
+			outline: none;
+		}
+	}
    
 }
 
 
-
+/* block four */
 .block-more {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 72px;
-    text-align: center;
-    &-product {
-        flex-basis: 30%;
-        text-align: center;
-        p {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 0.75px;
-            color: $text-color;
-            margin-top: 17px;
-            margin-bottom: 20px;
-        }
-        a {
-            font-family: 'Open Sans', sans-serif;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 0.75px;
-            color: $accent-color;
-        }
-        &__img {
-            background-image: url(../img/svg/book-product.svg);
-            width: 269px;
-            height: 409px;
-            border-radius: 5px;
-            margin: 0 auto;
-            margin-bottom: 35px;
-        }
-    }
+	display: flex;
+	justify-content: space-around;
+	margin-top: 72px;
+	text-align: center;
+	&-product {
+		flex-basis: 30%;
+		text-align: center;
+		p {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			line-height: 24px;
+			letter-spacing: 0.75px;
+			color: $text-color;
+			margin-top: 17px;
+			margin-bottom: 20px;
+		}
+		a {
+			font-family: 'Open Sans', sans-serif;
+			text-decoration: none;
+			text-transform: uppercase;
+			letter-spacing: 0.75px;
+			color: $accent-color;
+		}
+		&__img {
+			background-image: url(../img/svg/book-product.svg);
+			width: 269px;
+			height: 409px;
+			border-radius: 5px;
+			margin: 0 auto;
+			margin-bottom: 35px;
+			position: relative;
+			h3 {
+				font-size: 24px;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 0.96px;
+				color: $light-color;
+				position: absolute;
+				top: 71px;
+				left: 33px;
+				right: 0;
+				span {
+					display: block;
+					font-family: 'Open Sans', sans-serif;
+					color: $accent-color;
+					text-transform: none;
+					font-size: 12px;
+					font-weight: 400;
+					letter-spacing: 0.6px;
+					margin-top: 7px;
+
+				}
+			}
+			p {
+				font-family: 'Open Sans', sans-serif;
+				color: $accent-color;
+				font-size: 12px;
+				font-weight: 400;
+				letter-spacing: 0.6px;
+				position: absolute;
+				bottom: 7px;
+				left: 19px;
+				right: 0;
+
+			}
+
+		}
+	}
 }
+
+
+/* block six*/
+.block-event {
+	display: flex;
+}
+
+.block-author-avatar {
+	position: relative;
+	&__svg {
+		position: absolute;
+		z-index: -1;
+		left: 0;
+	}
+	&__img {
+		margin-left: 51px;
+		margin-top: 50px;
+	}
+}
+
+.block-event-date {
+	padding-left: 110px;
+	&__author {
+		color: $text-color;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: 0.9px;
+	}
+	&__title {
+		color: $subtitle-color;
+		font-size: 48px;
+		font-weight: 700;
+		letter-spacing: 1.92px;
+		margin-top: 18px;
+    	margin-bottom: 11px;
+	}
+	&__subtitle {
+		color: $accent-color;
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: 1.0px;
+		margin-bottom: 42px;
+	}
+	&__place {
+		color: $subtitle-color;
+		font-size: 18px;
+		font-weight: 700;
+		letter-spacing: 0.8px;
+		margin-top: 7px;
+		margin-bottom: 17px;
+	}
+	&__info {
+		color: $subtitle-color;
+		color: #696980;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 15px;
+		font-weight: 400;
+		letter-spacing: 0.75px;
+		line-height: 24px;
+
+	}
+	&__btn {
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: 0.72px;
+		color: $light-color;
+		border: none;
+		outline: none;
+		padding: 14px 31px;
+		box-shadow: 0 2px 0 $btn-shadow;
+		border-radius: 3px;
+		background-color: #65e47d;
+		background-image: $btn-gradient;
+		margin-top: 25px;
+		margin-bottom: 57px;
+	}
+
+}
+
+
+
+// locale connection
+
+@font-face {
+		font-family: 'Roboto Thin Italic'; //delete Thin Italic
+		src: url('../fonts/Roboto-ThinItalic.eot');
+		src: url('../fonts/Roboto-ThinItalic.eot') format('embedded-opentype'),
+		url('../fonts/Roboto-ThinItalic.woff') format('woff'),
+		url('../fonts/Roboto-ThinItalic.ttf') format('truetype');
+		font-weight: normal; //100
+		font-style: normal; //italic
+		}
