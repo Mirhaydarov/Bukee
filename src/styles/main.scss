@@ -570,7 +570,6 @@ body {
 
 
 // block seven
-
 .block-item {
 	display: flex;
 	justify-content: space-between;
@@ -606,6 +605,66 @@ body {
 		font-weight: 400;
 		line-height: 24px;
 		letter-spacing: 0.75px;
+	}
+}
+
+// block eight
+.block-subscribe {
+	display: flex;
+	justify-content: space-between;
+}
+.block-join {
+	flex-basis: 49%;
+	h2 {
+		color: $subtitle-color;
+		font-size: 48px;
+		font-weight: 700;
+		letter-spacing: 1.5px;
+		margin-bottom: 9px;
+	}
+	p {
+		color: $text-color;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 24px;
+		letter-spacing: 0.75px;
+	}
+}
+.block-email {
+	flex-basis: 48.7%;
+	input {
+		font-family: 'Open Sans', sans-serif;
+		width: 100%;
+		border-radius: 3px;
+		background-color: $subtitle-color;
+		color: $light-color;
+		letter-spacing: 0.75px;
+		outline: none;
+		border: none;
+		padding: 15px 28px;;
+		margin-top: 10px;
+		box-sizing: border-box;
+		&::-webkit-input-placeholder {color:#9191b5;}
+		&::-moz-placeholder          {color:#9191b5;}
+		&:-moz-placeholder           {color:#9191b5;}
+		&:-ms-input-placeholder      {color:#9191b5;}
+
+	}
+	button {
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: 0.72px;
+		color: $light-color;
+		border: none;
+		outline: none;
+		padding: 14px 0;
+		box-shadow: 0 2px 0 $btn-shadow;
+		border-radius: 3px;
+		background-color: #65e47d;
+		background-image: $btn-gradient;
+		margin-top: 20px;
+		width: 100%;
 	}
 }
 
