@@ -68,6 +68,9 @@ body {
 		letter-spacing: 1.92px;
 		color: $subtitle-color;
 		text-align: center;
+		&_top {
+			margin-top: 15px;
+		}
 	}
 	&__subtitle {
 		color: $accent-color;
@@ -92,6 +95,9 @@ body {
 		max-width: 220px;
 		margin-top: 87px;
 		padding: 15px 0px;
+		&_size {
+			max-width: 265px;
+		}
 		
 	}
 }
@@ -565,7 +571,43 @@ body {
 
 // block seven
 
-
+.block-item {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 74px;
+	&__info {
+		flex-basis: 30%;
+	}
+	&__title {
+		color: $subtitle-color;
+		font-size: 18px;
+		font-weight: 700;
+		letter-spacing: 0.9px;
+		margin-top: 15px;
+	}
+	&__date {
+		color: $accent-color;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 15px;
+		font-weight: 400;
+		letter-spacing: 0.75px;
+		margin-top: 9px;
+		margin-bottom: 15px;
+		&:before {
+			content:"By";
+			color: #80809b;
+			margin-right: 3px;
+		}
+	}
+	&__more {
+		color: $text-color;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 24px;
+		letter-spacing: 0.75px;
+	}
+}
 
 
 // locale connection
