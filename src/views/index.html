@@ -25,6 +25,7 @@
 		<link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i|Roboto+Slab:100,400,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	</head>
 	<body>
 	<div class="page-main">
@@ -178,7 +179,29 @@
 		</div>
 	</section>
 
-	<!--skip five block-->
+	<section>
+		<div class="page">
+			<div class="wrap">
+				<div class="block-carousel">
+					<div>
+						<h3>Kate Dennings</h3>
+						<p>Calligraphy Expert</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+					</div>
+					<div>
+						<h3>Kate Dennings</h3>
+						<p>Calligraphy Expert</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+					</div>
+					<div>
+						<h3>Kate Dennings</h3>
+						<p>Calligraphy Expert</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<section id="events">
 		<div class="page">
@@ -220,22 +243,22 @@
 				<p class="page__subtitle">Some of the latest posts from my personal blog</p>
 				<div class="block-item">
 					<div class="block-item__info">
-						<img src="../img/img1.jpg" alt="Image">
+						<div class="block-item__img"><a href="#"><img src="../img/blog1.jpg" alt="Image"></a></div>
 						<h4 class="block-item__title">Importance of light in photography</h4>
-						<p class="block-item__date">Emma Anderson - June 20, 2018</p>
-						<p class="block-item__more">Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
+						<a class="block-item__date" href="#">Emma Anderson <span>-</span> June 20<span>,</span> 2018</a>
+						<p class="block-item__desc">Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
 					</div>
 					<div class="block-item__info">
-						<img src="../img/img2.jpg" alt="Image">
+						<div class="block-item__img"><a href="#"><img src="../img/blog2.jpg" alt="Image"></a></div>
 						<h4 class="block-item__title">The tools you need for the perfection</h4>
-						<p class="block-item__date">Emma Anderson - June 25, 2018</p>
-						<p class="block-item__more">Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
+						<a class="block-item__date" href="#">Emma Anderson <span>-</span> June 25<span>,</span> 2018</a>
+						<p class="block-item__desc">Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
 					</div>
 					<div class="block-item__info">
-						<img src="../img/img3.jpg" alt="Image">
+						<div class="block-item__img"><a href="#"><img src="../img/blog3.jpg" alt="Image"></a></div>
 						<h4 class="block-item__title">Knowing the difference is important</h4>
-						<p class="block-item__date">Emma Anderson - August 22, 2018</p>
-						<p class="block-item__more">Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
+						<a class="block-item__date" href="#">Emma Anderson <span>-</span> August 22<span>,</span> 2018</a>
+						<p class="block-item__desc">Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
 					</div>
 				</div>
 				<a class="page__btn page__btn_size" href="#">Read more in the blog</a>
@@ -244,24 +267,71 @@
 		
 	</section>
 	<section id="clients">
-		<div class="page">
 			<div class="wrap">
 				<div class="block-subscribe">
-					<div class="block-join">
+					<div class="block-subscribe__join">
 						<h2>Join Newsletter</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
 					</div>
-					<div class="block-email">
+					<div class="block-subscribe__email">
 						<input type="email" placeholder="Enter your email">
 						<button type="submit">Subscribe</button>
 					</div>
 				</div>
 			</div>
-		</div>
 	</section>
+	<footer>
+		<div class="page page_dark-gray">
+			<div class="wrap">
+				<div class="block-credits">
+					<div class="block-credits-copyright">
+						<a href="#" class="header__logo header__logo_color"></a>
+						<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						<span>© 2018 Bukee Private Limited.</span></p>
+					</div>
+					<div class="block-credits-links">
+						<h4>Useful Links</h4>
+						<ul>
+							<li><a href="#">About Bukee</a></li>
+							<li><a href="#">Explore Our Ecosystem</a></li>
+							<li><a href="#">Monthly Community Meetup</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div class="block-credits-contacts">
+						<h4>Our Contacts</h4>
+						<p>Amphitheatre Parkway, CA, 94043</p>
+						<a href="tel:+4455663322">Call us on: +4455663322</a>
+						<a href="mailto:support@bukee.mail">Email: support@bukee.mail</a>
+						<ul>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-twitch"></i></a></li>
+							<li><a href="#"><i class="icon-youtube"></i></a></li>
+							<li><a href="#"><i class="icon-slack"></i></a></li>
+							<li><a href="#"><i class="icon-whatsapp"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
 		@@include("../blocks/modules/header/header.html")
 		@@include("../blocks/modules/footer/footer.html")
 		<script src="js/main.js"></script>
 		<script src="js/vendor.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.block-carousel').slick({
+					dots:true,
+					arrows: false,
+				});
+			});
+		</script>
 	</body>
 </html>
